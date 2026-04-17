@@ -1,0 +1,125 @@
+body {
+  background-image: url("../assets/images/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+
+  height: max-content;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  background-color: brown;
+  height: 6.5rem;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+  bottom: 0%;
+  height: 3.5rem;
+  width: 100%;
+  position: absolute;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inherit-text {
+  font-size: 2vw;
+  color: rgba(245, 170, 50, 0.93);
+  font-family: "Quicksand";
+  position: absolute;
+  display: flex;
+}
+
+.text {
+  font-size: 11vw;
+  font-family: "Bebas Neue";
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  position: absolute;
+  line-height: 97.5%;
+}
+
+.text-1 {
+  bottom: 25.5%;
+  left: 43.75%;
+  transform: translate(-50%, -50%);
+}
+
+.text-2 {
+  transform: translate(-50%, -50%);
+  top: 28%;
+  left: 13%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
+
+.slogan {
+  position: absolute;
+  display: flex;
+  bottom: 11%;
+  left: 8.35%;
+  font-family: "Quicksand";
+  font-size: 1.8vw;
+  background-color: rgba(241, 239, 239, 0.164);
+  padding: 2.1vw 1vw;
+  border-radius: 5.95vw;
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
+}
+
+/* pouze visual */
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+/* pouze visual */

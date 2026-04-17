@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/gift-card.css" />
+  <link rel="stylesheet" href="../css/fontello.css" />
+</head>
+<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/fontello.css" />
+
+    <nav>
+      <a href="Pizzeria Mamarina.html">
+        <img
+          src="../assets/images/Logo_pizzeria-removebg-preview.png"
+          height="125px"
+          width="200px"
+        />
+      </a>
+
+      <!-- pouze visual -->
+
+      <form class="vyhledávání" id="vyhledávání">
+        <span>🔍</span>
+        <input type="text" placeholder="Search" />
+      </form>
+
+      <!-- pouze visual -->
+
+      <a href="orders.html">Orders</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact-us</a>
+      <a href="shopping-cart.html" style="font-size: 2.5rem"
+        ><i class="icon-basket"></i
+      ></a>
+    </nav>
+
+
+
+    <div class="container">
+      <h1>GIFT CARD</h1>
+
+      <h4>Give the gift of delicious pizza!</h4>
+
+      <fieldset id="choose-amount">
+
+        <!-- uživatel může zvolit částku, kterou chce darovat -->
+
+        <legend>Choose amount</legend>
+          <button autofocus>$50</button>
+          <button>$100</button>
+          <button>$250</button>
+      </fieldset>
+
+      <fieldset id="enter-details">
+
+         <!-- uživatel zadá jméno a email příjemce, aby mohl být dárkový poukaz doručen elektronicky -->
+         
+        <legend>Enter details</legend>
+        <label>Name:</label>
+        <input type="text"  required placeholder="Example"/>
+        <label>Email:</label>
+        <input type="email"  required placeholder="Email-address"/>
+      </fieldset>
+
+      <fieldset id="confirmation">
+
+        <legend>Confirmation</legend> 
+        <p>$50 gift card to Example at Email-address</p>
+
+        <!-- Tady budou informace co uživatel zadá do předchozích fieldsetů, aby mohl potvrdit, že jsou správné a pokračovat v procesu objednávky
+          zatím je to jen vizual -->
+
+        <button>Confirm</button>
+
+          <!-- Po kliknutí na tlačítko "Confirm" se zobrazí potvrzovací zpráva a shrnutí objednávky a zadání dodatečných údajů pro zpracování objednávky.
+          Tato část bude v budoucnu, ale prozatím se jedná pouze o vizuál bez funkčnosti -->
+
+      </fieldset>
+  
+    </div>
+  
+</body>
+</html>

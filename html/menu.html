@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vyplňte</title>
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/fontello.css" />
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <nav>
+      <a href="Pizzeria Mamarina.html">
+        <img
+          src="../assets/images/Logo_pizzeria-removebg-preview.png"
+          height="125px"
+          width="200px"
+        />
+      </a>
+
+      <!-- pouze visual -->
+
+      <form class="vyhledávání" id="vyhledávání">
+        <span>🔍</span>
+        <input type="text" placeholder="Search" />
+      </form>
+
+      <!-- pouze visual -->
+
+      <a href="orders.html">Orders</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact-us</a>
+      <a href="shopping-cart.html" style="font-size: 2.5rem"
+        ><i class="icon-basket"></i
+      ></a>
+    </nav>
+
+    <main>
+      <div class="box-pizza">
+        <button id="btn-next" onclick="next()">〉</button>
+        <button id="btn-prev" onclick="prev()">〈</button>
+
+        <div class="obrázky">
+          <div class="slider">
+            <img
+              src="../assets/images/Text odstavce.png"
+              height="75%"
+              width="75%"
+            />
+            <img
+              src="../assets/images/Text odstavce (1).png"
+              height="75%"
+              width="75%"
+            />
+            <img
+              src="../assets/images/Text odstavce (2).png"
+              height="75%"
+              width="75%"
+            />
+            <img
+              src="../assets/images/Text odstavce (3).png"
+              height="75%"
+              width="75%"
+            />
+            <img
+              src="../assets/images/Text odstavce (4).png"
+              height="75%"
+              width="75%"
+            />
+          </div>
+
+          <div
+            class="slider-text"
+            style="font-family: BUNGEE; font-size: 2rem; text-align: center"
+          >
+            <p>
+              A classic Italian pizza topped with fresh tomatoes, mozzarella,
+              and basil
+            </p>
+            <p>
+              A popular choice loaded with spicy pepperoni slices and melted
+              cheese
+            </p>
+            <p>
+              Smoky BBQ sauce, grilled chicken, and onions for a bold flavor
+            </p>
+            <p>A rich mix of mozzarella, cheddar, parmesan, and blue cheese</p>
+            <p>
+              A premium pizza topped with shrimp, tuna, or calamari depending on
+              the recipe
+            </p>
+          </div>
+          <button id="btn-menu-order">add to cart</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer>
+      <b> © 2025 Pizzeria Mamaria. All rights reserved </b>
+    </footer> -->
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

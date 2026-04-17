@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pizzeria Mamarina</title>
+    <link rel="stylesheet" href="../css/shopping-cart.css" />
+    <link rel="stylesheet" href="../css/fontello.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="Pizzeria Mamarina.html">
+        <img
+          src="../assets/images/Logo_pizzeria-removebg-preview.png"
+          height="125px"
+          width="200px"
+        />
+      </a>
+
+      <!-- pouze visual -->
+
+      <form class="vyhledávání" id="vyhledávání">
+        <span>🔍</span>
+        <input type="text" placeholder="Search" />
+      </form>
+
+      <!-- pouze visual -->
+
+      <a href="orders.html">Orders</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact-us</a>
+      <a href="shopping-cart.html" style="font-size: 2.5rem"
+        ><i class="icon-basket"></i
+      ></a>
+    </nav>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <div
+      style="
+        position: absolute;
+        top: 18.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: &quot;Quicksand&quot;, sans-serif;
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.268);
+      "
+    >
+      <b>Welcome to the shopping cart!</b>
+    </div>
+
+    <div class="wrapper">
+      <div class="main-wrapper" id="first-wrapper">
+        <h4 id="delivery-text">Delivery information</h4>
+        <form id="form-details">
+          <label >Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+          /><br />
+          <label >Address:</label><br />
+          <input
+            type="text"
+            id="address"
+            placeholder="Enter your address"
+          /><br />
+          <label >Phone number:</label><br />
+          <input
+            type="text"
+            id="phone"
+            placeholder="Enter your phone number"
+          /><br />
+
+          <div class="payment-method">
+            <p style="font-family: Quicksand">Choose payment method:</p>
+            <label
+              ><input type="radio" name="payment"/>
+              <i class="icon-credit-card"></i>card</label
+            ><br />
+            <label
+              ><input type="radio" name="payment"/> Cash</label
+            >
+          </div>
+
+          <h2 style="text-align: center; font-family: Quicksand">
+            <a href="tel:789456123" style="color: black"
+              >or call us at 789 456 123</a
+            >
+          </h2>
+          <input type="submit" value="Submit"/>
+
+          <!-- Po kliknutí na tlačítko "Submit" se zobrazí potvrzovací zpráva a shrnutí objednávky a zadání dodatečných údajů pro zpracování objednávky.
+          Tato část bude v budoucnu, ale prozatím se jedná pouze o vizuál bez funkčnosti -->
+
+        </form>
+      </div>
+      <div class="main-wrapper" id="first-wrapper">
+        <h4 id="order-text">Your Orders</h4>
+        <div class="order-list">
+
+
+          <!-- Tady je místo pro objednávky, které si zákazník přidal do košíku.
+          Prozatím jsou zde pouze ukázkové položky, ale v budoucnu budou nahrazeny skutečnými objednávkami z menu.
+          Každá položka bude mít možnost odebrat ji z košíku kliknutím na ikonu koše vedle ní -->
+
+          <div class="order-item">
+            Large Pizza Pepperoni - $190 <span class="remove">🗑</span>
+          </div>
+          <div class="order-item">
+            Small Pizza BBQ Chicken - $140 <span class="remove">🗑</span>
+          </div>
+          <div class="order-item">
+            Medium Pizza Quattro Formaggi - $165 <span class="remove">🗑</span>
+          </div>
+          <div class="order-item">
+            Small Pizza Seafood - $150 <span class="remove">🗑</span>
+          </div>
+          <div class="order-item">
+            Large Pizza Quattro Formaggi - $195 <span class="remove">🗑</span>
+          </div>
+          <div class="order-item">
+            Medium Pizza Pepperoni - $160 <span class="remove">🗑</span>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="gift-card.html" style="font-size: 1.5rem" id="link-gift-card"
+        ><i class="icon-address-card"
+          ><div id="text" style="display: none;">Buy gift card</div></i
+        ></a
+      >
+    </div>
+
+    <script>
+      const icon = document.getElementById("link-gift-card");
+      const text = document.getElementById("text");
+
+      function showText() {
+        text.style.display = "block";
+        
+      }
+      function hideText() {
+        text.style.display = "none";
+      }
+
+      icon.addEventListener("mouseenter", showText);
+      icon.addEventListener("mouseleave", hideText);
+    </script>
+  </body>
+</html>
+

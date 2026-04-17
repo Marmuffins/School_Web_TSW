@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #F5C29C;
+  background: radial-gradient(circle,rgba(245, 194, 156, 1) 0%, rgba(200, 103, 63, 1) 100%);
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: #a52a2a;
+  height: 6.5rem;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.main-wrapper{
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#first-wrapper{
+  height: 60%;
+  top : 8%;
+}
+
+#delivery-text{
+  color:  #000000;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5.5%;
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+  font-family: "QUICKSAND";
+  
+}
+
+#form-details{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 7.5%;
+  top: 15%;
+  width: 75%;
+}
+
+#form-details input{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+}
+
+
+#form-details label{
+  color:(192, 192, 192);
+  font-size: 1.25rem;
+  font-family: "QUICKSAND";
+}
+
+#form-details label {
+  color: #5A4840;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+#form-details input[type='text'],
+#form-details input[type='email'],
+#form-details input[type='tel'],
+#form-details input[type='email'] {
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-color: #d0d0d0 ;
+  width: 100%;
+  font-size: 0.95rem;
+  font-family: 'Quicksand', sans-serif;
+  background: rgba(255, 255, 255, 0.95);
+  color: #4a3930;
+  transition: all 150ms ease;
+}
+
+#form-details input[type='text']:focus,
+#form-details input[type='email']:focus,
+#form-details input[type='tel']:focus,
+#form-details input[type='email']:focus {
+  outline: none;
+  border-color: #d0d0d0;
+  background: #fff;
+}
+
+#form-details input[type='submit'] {
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  background: rgb(187, 78, 45);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 150ms ease;
+  border: 1px solid rgb(172, 172, 172);
+  display: flex;
+  position: absolute;
+  bottom: -25%;
+  left: 3.35%;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.8rem 0;
+  flex-wrap: wrap;
+}
+
+.payment-method p {
+  margin: 0;
+  font-size: 1rem;
+  color: #5A4840;
+}
+
+.payment-method label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: #4a3930;
+}
+
+.payment-method input[type='radio'] {
+  width: auto;
+  margin: 0;
+}
+
+#form-details input[type='submit']:hover {
+  background: #d67208ba;
+  color: #8b2c2c;
+  scale: 1.02;
+}
+
+#order-text {
+  color: #000000;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5.5%;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.6);
+  text-underline-offset: 0.7rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Quicksand";
+  text-decoration: underline rgba(0, 0, 0, 0.6);
+}
+
+.order-list {
+  position: absolute;
+  top: 15%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Quicksand';
+}
+
+.order-item {
+  background: rgba(255, 255, 255, 0.9);
+  border: #00000027 1px solid;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #4a3930;
+  height: 3rem;
+}
+
+.remove {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+#link-gift-card {
+  position: absolute;
+  color: #000000;
+  transition: all 150ms ease;
+  right: 2%;
+  bottom: 3%;
+  background-color: white;
+  padding: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100rem;
+  padding-right:0.80%;
+  font-size: 0.5rem;
+  transition: all 450ms ease;
+  width:2.5rem; 
+  overflow: hidden;
+  max-height:1.5rem ;
+
+}
+
+#text{
+  display: none;
+  position: relative;
+  left: 24%;
+  bottom: 2.22rem;
+  font-size: 2rem;
+  min-width: 10.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#link-gift-card:hover{
+  transition: all 450ms ease;
+  width:9.5em;
+  display: show;   
+  padding: 0.7rem 1.3rem;
+
+}

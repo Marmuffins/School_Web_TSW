@@ -1,0 +1,114 @@
+body {
+  background-image: url("../assets/images/pizza-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0%;
+  font-size: 14px;
+  line-height: 1;
+
+  height: max-content;
+
+  color: white;
+  display: flex;
+}
+
+.box-text {
+  padding: 3.5%;
+  position: absolute;
+  width: 57.5%;
+  background-color: rgb(255, 255, 255);
+  font-family: "Bungee";
+  font-size: 1.5vw;
+  top: 100%;
+  left: 50%;
+  color: black;
+  border-radius: 10rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.box-text-nadpis {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 11vh;
+}
+
+nav {
+  display: flex;
+  background-color: brown;
+  height: 6.5rem;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  width: 100%;
+  justify-content: space-evenly;
+}
+i {
+  font-size: 2.5rem;
+  color: white;
+}
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+  bottom: 0;
+  height: 5.5rem;
+  width: 100%;
+  position: absolute;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(79vh);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
+
+#link-contatncs,
+#photo-galery {
+  color: black;
+  text-decoration: underline;
+}
+
+/* pouze visual */
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+/* pouze visual */

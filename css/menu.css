@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: max-content;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  display: flex;
+  background-color: #495d63;
+}
+
+nav {
+  display: flex;
+  background-color: #a52a2a;
+  height: 6.5rem;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* footer {
+  background-color: #f0f0f0;
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+  bottom: 0%;
+  height: 3.5rem;
+  width: 100%;
+  position: absolute;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: #ec9524;
+  transition: 750ms;
+}
+
+/* pouze visual */
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;  
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+/* pouze visual */
+
+.box-pizza {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 65%;
+  width: 55%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5.5em;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  color: black;
+}
+
+.obrázky {
+  position: absolute;
+  width: 45%;
+  left: 5%;
+  transform: translate(-50%, -50%, -50%);
+}
+
+.slider {
+  flex-direction: row;
+  display: flex;
+  overflow: hidden;
+  color: black;
+}
+
+.slider img {
+  flex: 0 0 100%;
+  gap: 10%;
+}
+
+.slider p {
+  color: black;
+  position: absolute;
+  left: 140%;
+  top: -100%;
+  font-size: 2em;
+  gap: 20rem;
+}
+
+#btn-prev {
+  position: absolute;
+  display: flex;
+  top: 45%;
+  left: -10%;
+  border-radius: 400rem;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding-right: 0.8em;
+  padding-bottom: 0.12em;
+  transition: all ease-in-out 200ms;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  transform: scale(120%);
+}
+
+#btn-next {
+  position: absolute;
+  display: flex;
+  top: 45%;
+  right: -10%;
+  border-radius: 400rem;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 0.8em;
+  padding-bottom: 0.12em;
+  transition: all ease-in-out 200ms;
+}
+
+.slider-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 150%;
+  color: rgb(163, 163, 163);
+  width: 50%;
+}
+
+.slider-text p:first-child {
+  color: black;
+  display: flex;
+}
+
+.slider-text p:not(:first-child) {
+  display: none;
+}
+
+
+#btn-menu-order {
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  border-radius: 40rem;
+  border: none;
+  width: 200%;
+  height: 3.5rem;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #a52a2a;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  top: 108.5%;
+  left: 100%;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+  padding: 2rem;
+}
+
+#btn-menu-order:hover {
+  background-color: #ec9524;
+  scale: 1.005;
+}
+

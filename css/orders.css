@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  background-color: brown;
+  height: 6.5rem;
+  gap: 4rem;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+  bottom: 0%;
+  height: 3.5rem;
+  width: 100%;
+  position: absolute;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inherit-text {
+  font-size: 2vw;
+  color: rgb(238, 163, 23);
+  font-family: "Quicksand";
+  position: absolute;
+}
+
+/* pouze visual */
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;  
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+/* pouze visual */
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
+
+.video_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  z-index: -3;
+}
+
+.video_background video {
+  object-fit: cover;
+  z-index: -3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.darkening_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.651);
+  z-index: -2;
+}
+
+.text_na_stredu {
+  position: absolute;
+  text-align: center;
+  text-justify: center;
+  top: 25%;
+  font-family: "BUNGEE";
+  font-size: 17vh;
+  display: flex;
+  z-index: -2;
+}
+
+.btn {
+  padding: 2vh;
+  background-color: rgb(216, 13, 40);
+  position: absolute;
+  border-radius: 10vh;
+  border: none;
+}
+
+.btn-main {
+  padding: 2vh;
+  background-color: rgb(216, 13, 40);
+  position: absolute;
+  border-radius: 10vh;
+  top: 72%;
+  left: 38.3%;
+  z-index: -2;
+  transition: all 639ms ease-in-out;
+  border: 0;
+  font-family: "Franklin Gothic Medium";
+  color: rgba(255, 255, 255, 0.897);
+  cursor: pointer;
+  font-size: 7vh;
+  align-items: center;
+}
+
+.btn-main:hover {
+  transform: scale(1.1);
+  background: wheat;
+  transition: 639ms;
+}
+
+.pozadi {
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  height: 95%;
+  display: none;
+  position: absolute;
+  z-index: 0;
+  left: 28.05%;
+  top: 2.48%;
+  border-radius: 8.5vh;
+}
+
+.dark {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#close-button {
+  height: 1%;
+  width: 1%;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 100%;
+  position: absolute;
+  right: 0%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 3vh;
+  text-align: center;
+  border-style: dotted;
+  border-color: rgb(37, 37, 37);
+  background-color: rgb(131, 127, 127);
+  padding-top: 2.85%;
+}
+
+#pizza {
+  height: 10vh;
+  width: 27.5vh;
+  border-radius: 10vh;
+  font-size: 2vh;
+  font-family: "Quicksand";
+  outline: none;
+  background-color: rgb(173, 10, 10);
+  color: rgb(238, 165, 8);
+  cursor: pointer;
+  transition: 0.65s ease-in-out;
+  appearance: none;
+  display: flex;
+  text-align: center;
+  margin: 10%;
+  border: none;
+}
+
+#pizza:hover {
+  background-color: bisque;
+  color: rgb(173, 10, 10);
+}
+
+.dropdown {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 62.5%;
+  left: 50%;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vh;
+
+}
+
+.describe {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 78.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Bebas Neue";
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.button-pizza {
+  padding: 1vh;
+  background-color: rgb(216, 13, 40);
+  border-radius: 10vh;
+  border: none;
+  width: 20.5vh;
+  height: 7vh;
+  font-size: 2vh;
+  font-family: "Quicksand";
+  color: rgb(238, 165, 8);
+  cursor: pointer;
+  outline: none;
+}
+
+#pizza-image {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -370%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-confirm-purch {
+  position: absolute;
+  bottom: 2.5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-justify: center;
+  display: flex;
+  left: 10%;
+  width: 80%;
+  height: 4rem;
+  color: rgb(238, 165, 8);
+  font-family: "BUNGEE";
+  cursor: pointer;
+}
+
+#btn-confirm-purch:hover {
+  background-color: bisque;
+}

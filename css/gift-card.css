@@ -1,0 +1,181 @@
+﻿* {
+  margin: 0;
+  padding: 0%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #F5C29C;
+  background: radial-gradient(circle,rgba(245, 194, 156, 1) 0%, rgba(200, 103, 63, 1) 100%);
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  background-color: #a52a2a;
+  height: 6.5rem;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
+
+.vyhledávání {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 1vh;
+  width: 100%;
+  border-radius: 12vw;
+  font-size: 1.5rem;
+}
+
+.vyhledávání input {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1.25vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container h1 {
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  color: #a52a2a;
+  margin-bottom: 2vh;
+  position: absolute;
+  top: 10%;
+}
+
+.container h4 {
+  font-size: 1.5rem;
+  color: #292727;
+  margin-bottom: 2vh;
+  position: absolute;
+  top: 32.5%;
+}
+
+.container fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #fff8f2;
+  gap: 1rem;
+  width: 25.5%;
+  height: 35%;
+  position: relative;
+  bottom: -17.5%;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset {
+  border:  #f1d7d2 solid 1px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.container legend {
+  font-size: 1.1rem;
+  color: #a52a2a;
+  margin: 0;
+}
+
+fieldset button {
+  color: #a52a2a;
+  border: 1px solid #a52a2a;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  background-color: #fff;
+  width: 25%;
+  position: static;
+  align-self: center;
+}
+
+fieldset button:hover {
+  background-color: #a52a2a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#choose-amount button:focus {
+  transform: translateY(0);
+  background-color:#a52a2ab2;
+  color: #fff;
+
+}
+
+#enter-details label {
+  color: #614034;
+  font-weight: 600;
+}
+
+#enter-details input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(165, 42, 42, 0.2);
+  outline: none;
+  left: -5%;
+  position: relative;
+}
+
+#confirmation p {
+  color: #614034;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#confirmation button {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+  top: 35%;
+}
