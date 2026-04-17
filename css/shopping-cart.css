@@ -146,6 +146,8 @@ a:hover {
   background: rgba(255, 255, 255, 0.95);
   color: #4a3930;
   transition: all 150ms ease;
+  margin: 1rem 0;
+
 }
 
 #form-details input[type='text']:focus,
@@ -174,6 +176,7 @@ a:hover {
   bottom: -25%;
   left: 3.35%;
 }
+
 
 .payment-method {
   display: flex;
