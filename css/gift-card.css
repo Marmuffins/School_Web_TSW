@@ -101,7 +101,7 @@ a:hover {
   align-items: stretch;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  background-color: #fff8f2;
+  background-color: #facad661;
   gap: 1rem;
   width: 25.5%;
   height: 35%;
@@ -177,5 +177,5 @@ fieldset button:hover {
   margin-top: 1rem;
   width: 100%;
   position: relative;
-  top: 35%;
+  top: 55%;
 }
