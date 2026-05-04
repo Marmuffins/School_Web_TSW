@@ -16,20 +16,20 @@ body {
 
 nav {
   display: flex;
-  background-color: brown;
-  height: 5.5rem;
+  background-color: #a52a2a;
+  height: 6.5rem;
   width: 100%;
+  gap: 4rem;
   flex-direction: row;
   align-items: center;
-  font-family: "Franklin Gothic Medium";
-  justify-content: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
 }
 
 nav a {
-  position: relative;
+  width: 40%;
   text-align: center;
-  font-size: 1rem;
-  width: 5%;
+  font-size: 1.5rem;
 }
 
 
@@ -108,8 +108,8 @@ a:hover {
   display: flex;
   align-items: center;
   background: rgb(255, 255, 255);
-  padding: 1vh;
-  width: 20%;
+  padding: 1vh;  
+  width: 100%;
   border-radius: 12vw;
   font-size: 1.5rem;
 }
