@@ -109,6 +109,19 @@ a:hover {
   gap: 10%;
 }
 
+.slider img{
+    display: inline-block;
+    animation: rotate 30s linear infinite;
+    transition: all ease-in-out 200ms;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+    
+  }
+}
+
 .slider p {
   color: black;
   position: absolute;

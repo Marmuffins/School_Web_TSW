@@ -1,0 +1,42 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+
+  height: max-content;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: white;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  background-color: #a52a2a;
+  height: 6.5rem;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+  font-family: "BUNGEE";
+  justify-content: space-evenly;
+}
+
+nav a {
+  width: 40%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(236, 149, 36);
+  transition: 750ms;
+}
