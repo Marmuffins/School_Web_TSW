@@ -125,3 +125,20 @@ a:hover {
 }
 
 /* pouze visual */
+
+#jobs-a{
+  position: absolute;
+  right: 1.2rem;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  background: rgba(233, 33, 33, 0.95);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: 200ms;
+}
+
+#jobs-a:hover{
+  background: rgba(255, 35, 35, 0.811);
+  transition: 450ms;
+  scale: 1.05;
+}

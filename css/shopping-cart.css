@@ -4,12 +4,12 @@
 }
 
 body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: #F5C29C;
-  background: radial-gradient(circle,rgba(245, 194, 156, 1) 0%, rgba(200, 103, 63, 1) 100%);
+  background-image: linear-gradient(135deg, #7f2b24f2, #924135);
   min-height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;

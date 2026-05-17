@@ -7,9 +7,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: #F5C29C;
-  background: radial-gradient(circle,rgba(245, 194, 156, 1) 0%, rgba(200, 103, 63, 1) 100%);
-  background-attachment: fixed;
+  background: #7f2c22;
 }
 
 nav {
@@ -177,5 +175,5 @@ fieldset button:hover {
   margin-top: 1rem;
   width: 100%;
   position: relative;
-  top: 55%;
+  top: 42%;
 }

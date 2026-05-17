@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: rgba(240, 38, 223, 0.356);
+  background-image: linear-gradient(135deg, #7e3403 0%, #8c2b25 45%, #3f1310 100%);
   padding: 0;
   margin: 0;
 }
@@ -78,7 +78,7 @@ a:hover {
   flex-grow: 1;
   display: flex;
   gap: 1rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   transition: ease-in-out 500ms;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.446);
   border: black 0.1rem solid;

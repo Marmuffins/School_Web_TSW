@@ -1,17 +1,18 @@
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-  background-color: #7f2b24;
-
+  margin: 0%;
+  padding: 0%;
+  box-sizing: 0;
   height: max-content;
   overflow-x: hidden;
   overflow-y: hidden;
   color: white;
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(135deg, #7f2b24f2, #924135);
   display: flex;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
 }
 
 nav {
@@ -48,7 +49,7 @@ a:hover {
   display: flex;
   align-items: center;
   background: rgb(255, 255, 255);
-  padding: 1vh;  
+  padding: 1vh;
   width: 100%;
   border-radius: 12vw;
   font-size: 1.5rem;
@@ -66,41 +67,60 @@ a:hover {
 
 /* pouze visual */
 
-
 .container {
-  display: flex;
   position: absolute;
-  gap: -20rem;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 38%;
-  width: 40%; 
-  height: 35%;
+  width: 40%;
   border-radius: 2rem;
-  background-color: #7f2b24;
-  box-shadow: #1d06066c 0px 0px 40px;
+  background-color: #7f2b24f2;
+  box-shadow: 0 1vh 2vw rgba(0, 0, 0, 0.721);
   padding: 3rem;
-  flex-direction: column;
   display: flex;
-  align-items: left;
-  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transform: translate(60%,55%);
 }
 
-#container-main button{
+.container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#container-main > div > p:first-child {
+  margin: 0;
+  letter-spacing: 0.25rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.container h1 {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.05;
+}
+
+#container-main > div > p:nth-of-type(2) {
+  max-width: 75%;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+
+#container-main button {
   background-color: #a52a2a;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.25rem;
+  padding: 0.95rem 1.8rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
   cursor: pointer;
-  width: 20%;
-  height: auto;
-  display: flex;
-  position: relative;
-  bottom: -25%;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.container-main p,h1{
-  width: 50%;
+#container-main button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
 }
